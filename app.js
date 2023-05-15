@@ -11,7 +11,7 @@ config();
 const app = express();
 const PORT = process.env.PORT;
 
-app.set('timeout', 10000);
+app.set('timeout', 300000
 
 /*message.log();*/
 app.use(express.json());
