@@ -22,7 +22,7 @@ export class OpenAI {
             const res = await this.#openai.createChatCompletion({
                 model: process.env.OPENAI_MODEL,
                 messages:[{role:"user",content: question}],
-                stream:False
+                stream:'false'
             });
 
             return res;
