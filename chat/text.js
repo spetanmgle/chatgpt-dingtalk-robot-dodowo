@@ -22,7 +22,8 @@ export default class TextChat extends Chat {
             "robotCode": robotCode,
             "userIds": [staffID],
             "msgKey": "sampleText",
-            "msgParam": JSON.stringify({ "content": answer })
+            "msgParam": JSON.stringify({ "content": answer }),
+            "stream":"false"
         };
         const url = this.host + '/v1.0/robot/oToMessages/batchSend';
 
